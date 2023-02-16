@@ -1,3 +1,17 @@
+### 실행 방법
+
+Finder에서 index.html 더블클릭
+
+### 배포 링크
+
+https://vanilla-todo-jeeeun.vercel.app/
+
+### 개발 후기
+
+https://55wldms.tistory.com/11
+
+## 1주차 PR
+
 이제까지 리액트를 이용해서 편하게 개발하다가 난생 처음 바닐라 자바스크립트 프로젝트를 하게 되었는데,
 역시나 쉽지 않네요 ㅎㅎ 무사히 과제 제출을 했다는 것에 의의를 둬보려고 합니다..ㅎㅎ
 
@@ -14,10 +28,6 @@ key questions도 경험을 살려 작성하고 싶었으나..
 
 이번 스터디에서 여러모로 얻어가는 것도 많고 느낀점도 많았는데
 좋은 과제 내주셔서 감사드려요:)
-
-### 배포 링크
-
-https://vanilla-todo-jeeeun.vercel.app/
 
 ### key questions
 
