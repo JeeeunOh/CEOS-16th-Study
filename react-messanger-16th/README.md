@@ -1,50 +1,32 @@
-# 서론
+3주차에 나름 구조를 잘 짜놨다고 생각했는데, 전혀 아니었네요..
+이번 과제에서는, 생각보다 채팅방 input값을 store에 저장되어있는 chatList에 반영하는 부분에서 시간을 많이 썼던 것 같습니다.
+그리고 이번 과제의 포인트는...! settingPage에서 발견하실 수 있습니다.
+움짤이라 로딩이 좀 걸리긴 하지만.. 제 배포페이지를 구경오신 분들에게 드리는 소소한 재미입니다^~^
 
-안녕하세요 🙌🏻 16기 프론트 운영진 **한규진**입니다. 이번 과제에서는 드디어 투두리스트에서 벗어나 새로운 프로젝트인 **messenger** 만들기를 진행합니다.
+### Key Questions
 
-이번주부터는 새로 **TypeScript**를 적용해보려고 합니다.
+**1. Routing 이란?**
 
-애플리케이션의 규모가 커지게 될 수록, 컴포넌트가 가지는 props의 종류 또한 다양해지게 됩니다. 무지성 코딩을 하다보면 가끔 이 props의 구성과 이름, 어떤 타입이 들어가야 하는지 헷갈리기 마련이죠. 보통 그럴 때 다시 컴포넌트 정의 부분으로 돌아가 props의 구성을 보고 오곤 합니다.
+네트워크적인 개념으로 설명하자면, '어떤 네트워크 안에서 통신 데이터를 보낼 때 최적의 경로를 선택하는 과정'이라고는 하는데,
+좀 더 풀어서 쓰면 하나의 페이지에서 다른 주소로 이동하면 다른 페이지를 보여주는 것을 의미한다.
 
-하지만 이럴 때, typescript를 적용한다면 컴포넌트의 구성과 그 이름, 심지어 타입까지 한번에 자동완성으로 편리하게 관리할 수 있고, 생산성이 증대되겠죠.
+보통 프론트엔드에서 라우터를 쓴다!고 하면 한 페이지에서 다른 페이지로 이동할 때 페이지끼리 연결하는 도구..? 정도로 생각하면 될 것 같다. 나는 라우터를 사용하기 위해 react-router-dom을 설치해서 페이지끼리 이동하였다.
 
-**React Hooks**에 조금 더 익숙해지는 것을 목표로 합니다. 여러 Hook들이 있지만 그 중에서도 `useState`, `useEffect`, `useRef`를 중점적으로 사용해 보는 미션인데요, React를 사용하면서 굉장히 자주 쓰이는 Hook들이기 때문에 이 부분을 집중적으로 공부해 보세요.
+**2. SPA 란?**
 
-그럼 이번 미션도 파이팅입니다!!
+SPA의 반대되는 개념으로 MPA가 있는데 SPA는 Single Page Application으로 한 개의 페이지로 구성된 어플리케이션, MPA는 Multiple Page Application으로 여러개의 페이지로 구성된 어플리케이션을 의미한다.
 
-# 미션
+SPA는 웹 어플리케이션에 필요한 모든 리소스를 한번에 다운로드해서 초기 세팅 시간이 오래걸리지만, 하나의 페이지 안에서 이동을 할 때 페이지가 빨리빨리 전환된다는 장점이 있고 MPA는 그때그때 서버에서 필요한 리소스를 가져와 페이지를 렌더링하기 때문에 깜빡임 현상이 일어날 수 있다는 단점이 있지만 필요한 리소스들이 서버에 저장되어있어 검색엔진에 잘 잡힌다는 장점이 있다. 내가 이번주에 개발한 페이지는 SPA이다!!
 
-## 미션 목표
+**3. 상태관리란?**
 
-- TypeScript를 사용해봅니다.
-- useState로 컴포넌트의 상태를 관리합니다.
-- useEffect와 useRef의 사용법을 이해합니다.
-- Custom hooks를 통해 중복되는 로직을 줄이기
-- Styled-components에서 props 사용해보기
-- (선택) Redux, Context API등 Flux 패턴 적용해보기
+상태란, 컴포넌트의 변경 가능한 데이터 저장소인데 이런 상태를 관리하기 위해서 context API, redux, recoil 등을 사용한다. 나는 그 중에서 recoil을 사용해서 상태관리를 하게 되었다.
 
-## 기한
+### 개발 후기
 
-2022년 9월 30일 금요일
+https://55wldms.tistory.com/19
 
-## 필수 구현 기능
+### 배포링크
 
-- [결과화면](https://9yujin.github.io/react-messenger-15th/)과 같이 구현합니다.
-- 채팅방 상단의 프로필을 클릭하면 사용자를 변경할 수 있습니다.
-- 메세지를 보내면 채팅방 하단으로 스크롤을 이동시킵니다. (Hint: useEffect + scrollTo)
-- 메세지에 유저 정보(프로필 사진, 이름)를 표시합니다.
-- user와 message 데이터를 json 파일에 저장합니다.
-- **UI는 마음대로 구성**하되, 반응형까진 고려하지 않으셔도 됩니다.
-- 그 외 추가하고 싶은 기능이 있다면 마음껏 추가해 주세요!
-
-참고로 이번 과제는 다음주까지 이어지는 과제이므로 **확장성**을 충분히 고려해 주세요. 참고로 **4주차 과제에서는 유저 및 기능 추가와 Routing을** 진행합니다.
-
-## 링크 및 참고자료
-
-- [React docs - Hook](https://ko.reactjs.org/docs/hooks-intro.html)
-- [React의 Hooks 완벽 정복하기](https://velog.io/@velopert/react-hooks#1-usestate)
-- [useEffect 완벽 가이드](https://overreacted.io/ko/a-complete-guide-to-useeffect/)
-- [코딩 컨벤션](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION)
-- [타입스크립트 핸드북](https://joshua1988.github.io/ts/intro.html)
-- [리액트 프로젝트에서 타입스크립트 사용하기 (시리즈)](https://velog.io/@velopert/series/react-with-typescript)
-- [Flux 패턴이란](https://velog.io/@huurray/React%EC%9D%98-%ED%83%84%EC%83%9D%EA%B3%BC-Flux-%ED%8C%A8%ED%84%B4%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
+https://jieun-message-2onv9ozj6-0909oje.vercel.app/
+-> 오류 수정했더니.. 링크가 바뀌어서 재배포되네요 쥬륵...
