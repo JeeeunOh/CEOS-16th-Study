@@ -5,7 +5,6 @@
 ### 배포 링크
 
 https://ceos-demo-vote-one.vercel.app/
-https://user-images.githubusercontent.com/65931227/208940507-ff198592-4269-45b8-987b-4d9c7314d66a.mov
 
 ### 개발 후기
 
