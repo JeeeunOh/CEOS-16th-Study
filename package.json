@@ -1,0 +1,16 @@
+{
+  "name": "CEOS-16th-Study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JeeeunOh/CEOS-16th-Study.git",
+  "author": "JeeeunOh <0909oje@naver.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "next-netflix-16th",
+    "react-messanger-16th",
+    "react-todo-16th",
+    "react-vote-16th"
+  ]
+}
+
